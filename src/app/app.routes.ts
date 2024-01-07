@@ -10,24 +10,24 @@ import { NgModule } from "@angular/core";
 export const routes: Routes = [
   {
     //wwww.aytach.com/ default component path'idir
-    path: "main",
+    path: "",
     component: MainLayoutComponent,
     children: [
       //children mainlayoutun içiseine alınan componentleri belirtken keyWord'dur
       {
         path: "home",
-        component: HomeComponent,
-        outlet: 'home'
+        component: HomeComponent
+        
       },
       {
         path: "hakkimizda",
-        component: AboutMeComponent,
-        outlet: 'hakkimizda'
+        component: AboutMeComponent
+       
       },
       {
         path: "iletisim",
-        component: ContactComponent,
-        outlet: 'iletisim'
+        component: ContactComponent
+      
       },
     ],
   },
