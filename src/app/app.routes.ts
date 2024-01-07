@@ -15,7 +15,7 @@ export const routes: Routes = [
     children: [
       //children mainlayoutun içiseine alınan componentleri belirtken keyWord'dur
       {
-        path: "home",
+        path: "anasayfa",
         component: HomeComponent
         
       },
