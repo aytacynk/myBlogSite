@@ -26,7 +26,7 @@ export class MainNavComponent {
       if (x instanceof NavigationEnd) {
         if (x.url.indexOf("anasayfa") > 0) {
           this.pageActive = MainPage.home;
-        } else if (x.url.indexOf("hakkimda") > 0) {
+        } else if (x.url.indexOf("hakkimizda") > 0) {
           this.pageActive = MainPage.about_me;
         } else if (x.url.indexOf("iletisim") > 0) {
           this.pageActive = MainPage.contact;
