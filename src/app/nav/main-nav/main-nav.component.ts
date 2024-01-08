@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterModule,Router, NavigationEnd,RouterOutlet } from "@angular/router";
 import { CommonModule } from '@angular/common';
-
+import { HttpClientModule } from "@angular/common/http";
 
 enum MainPage {
   home = 1,
@@ -11,7 +11,7 @@ enum MainPage {
 @Component({
   selector: 'app-main-nav',
   standalone: true,
-  imports: [RouterModule,CommonModule],
+  imports: [RouterModule,CommonModule,HttpClientModule],
   templateUrl: './main-nav.component.html',
   styleUrl: './main-nav.component.css'
 })
