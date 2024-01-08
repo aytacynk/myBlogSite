@@ -1,12 +1,17 @@
 <div class="card border-primary">
-    <div class="card-header">Category</div>
+    <div class="card-header">Kategoriler</div>
     <div class="card-body text-primary">
+
+        <div *ngIf="categories==null" class="d-flex justify-content-center">
+            <div class="spinner-border text-primary" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
 
         <h3 *ngFor="let item of categories">
             <strong>
-                <a [routerLink]="['/kategori',item.name,item.id]"
-                    class="btn btn-link">
-                    <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                <a [routerLink]="['/kategori',item.name,item.id]" class="btn btn-link">
+                    <i class="fa-solid fa-arrow-right"></i>
                     {{item.name}}
                 </a>
             </strong>
