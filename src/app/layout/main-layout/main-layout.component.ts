@@ -4,6 +4,7 @@ import { CommonModule } from "@angular/common";
 import { MainNavComponent } from "../../nav/main-nav/main-nav.component";
 import { CategoryMenuComponent } from "../../components/category-menu/category-menu.component";
 import { HttpClientModule } from "@angular/common/http";
+import { PageTitleComponent } from "../../components/page-title/page-title.component";
 
 @Component({
   selector: "app-main-layout",
