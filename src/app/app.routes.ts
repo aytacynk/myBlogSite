@@ -16,18 +16,19 @@ export const routes: Routes = [
       //children mainlayoutun içiseine alınan componentleri belirtken keyWord'dur
       {
         path: "anasayfa",
-        component: HomeComponent
-        
+        component: HomeComponent,
+      },
+      {
+        path: "sayfa/:page",        // queryString değer bu :page tanımlama olarak alınabilir.
+        component: HomeComponent,
       },
       {
         path: "hakkimizda",
-        component: AboutMeComponent
-       
+        component: AboutMeComponent,
       },
       {
         path: "iletisim",
-        component: ContactComponent
-      
+        component: ContactComponent,
       },
     ],
   },
@@ -37,4 +38,3 @@ export const routes: Routes = [
     component: AdminLayoutComponent,
   },
 ];
-

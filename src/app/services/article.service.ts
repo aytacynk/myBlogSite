@@ -13,10 +13,10 @@ export class ArticleService {
   private apiUrl: string = "http://localhost:5116/api/articles";
   public loading: boolean = true;
 
-  getArticles(page: number, pageSize: number) {
+  getArticles(page?: number, pageSize?: number) {
     let api = `${this.apiUrl}/${page}/${pageSize}`;
 
-    return this.httpClient.get<ArticlePg[]>(api).pipe(// pipe işlemde araya giren bir method türüdür.
+    return this.httpClient.get<ArticlePg>(api).pipe(// pipe işlemde araya giren bir method türüdür.
       tap((x) => {
         this.loading = false;
       })
