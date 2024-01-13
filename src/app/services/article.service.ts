@@ -16,7 +16,7 @@ export class ArticleService {
   getArticles(page: number, pageSize: number) {
     let api = `${this.apiUrl}/${page}/${pageSize}`;
 
-    return this.httpClient.get<ArticlePg[]>(this.apiUrl).pipe(// pipe işlemde araya giren bir method türüdür.
+    return this.httpClient.get<ArticlePg[]>(api).pipe(// pipe işlemde araya giren bir method türüdür.
       tap((x) => {
         this.loading = false;
       })
