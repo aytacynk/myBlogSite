@@ -3,10 +3,11 @@ import { PageTitleComponent } from "../../components/page-title/page-title.compo
 import { Article } from "../../models/article";
 import { ArticleService } from "../../services/article.service";
 import { RouterOutlet, Router, ActivatedRoute } from "@angular/router";
+import { ArticlesComponent } from "../../components/articles/articles.component";
 @Component({
   selector: "app-home",
   standalone: true,
-  imports: [PageTitleComponent],
+  imports: [PageTitleComponent,ArticlesComponent],
   templateUrl: "./home.component.html",
   styleUrl: "./home.component.css",
 })
